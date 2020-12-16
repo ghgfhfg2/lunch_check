@@ -1,0 +1,17 @@
+.App {
+  width: 100%;
+  position: relative;
+}
+.header-box ul {
+  display: flex;
+}
+.content-box {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 640px) {
+  .content-box {
+    width: 100%;
+  }
+}
