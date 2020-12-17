@@ -13,25 +13,27 @@ function Content() {
     <>
       <div>
         <form onSubmit={onSubmit}>
-          <input
-            type="radio"
-            name="lubchCehck"
-            id="lunchType1"
-            value="일반식"
-            cheched={radio === "일반식" ? true : false}
-            onChange={onchange}
-          />
-          <label htmlFor="lunchType1">type1</label>
-          <input
-            type="radio"
-            name="lubchCehck"
-            id="lunchType2"
-            value="다식"
-            cheched={radio === "다식" ? true : false}
-            onChange={onchange}
-          />
-          <label htmlFor="lunchType2">type2</label>
-          <input type="submit" value="확인" />
+          <div className="lunch-check-input">
+            <input
+              type="radio"
+              name="lubchCehck"
+              id="lunchType1"
+              value="일반식"
+              checked={radio === "일반식" ? true : false}
+              onChange={onchange}
+            />
+            <label htmlFor="lunchType1">type1</label>
+            <input
+              type="radio"
+              name="lubchCehck"
+              id="lunchType2"
+              value="다식"
+              checked={radio === "다식" ? true : false}
+              onChange={onchange}
+            />
+            <label htmlFor="lunchType2">type2</label>
+            <input type="submit" className="btn" value="확인" />
+          </div>
         </form>
       </div>
     </>

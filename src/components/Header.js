@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Link, Route } from "react-router-dom";
 import Join from "./Join";
 import Login from "./Login";
+import Mypage from "./Mypage";
 import Content from "./Content";
 
 function Header() {
@@ -19,12 +20,16 @@ function Header() {
             <li>
               <Link to="/login">Login</Link>
             </li>
+            <li>
+              <Link to="/mypage">Mypage</Link>
+            </li>
           </ul>
         </div>
         <div className="content-box">
           <Route exact path="/" component={Content} />
           <Route path="/join" component={Join} />
           <Route path="/login" component={Login} />
+          <Route path="/mypage" component={Mypage} />
         </div>
       </Router>
     </>
