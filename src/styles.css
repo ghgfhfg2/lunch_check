@@ -20,9 +20,6 @@
 .content-box {
   width: 100%;
   max-width: 500px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 30px;
   margin: 0 auto;
 }
 h2 {
@@ -93,6 +90,22 @@ h2 {
   color: #fff;
   border-color: #409b29;
   cursor: pointer;
+}
+.myinfo {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+.myinfo li {
+  display: flex;
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  flex-direction: column;
+}
+.myinfo li div {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media all and (max-width: 640px) {
