@@ -26,7 +26,7 @@ function Header() {
           </ul>
         </div>
         <div className="content-box">
-          <Route exact path="/" component={Content} />
+          <Route exact path="/" render={() => <Content />} />
           <Route path="/join" component={Join} />
           <Route path="/login" component={Login} />
           <Route path="/mypage" component={Mypage} />

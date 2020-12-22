@@ -10,14 +10,12 @@ function Content() {
       alert("식단을 선택해 주세요");
     } else {
       setChecked(true);
-      console.log(checked);
     }
   };
   const onchange = (e) => {
     setRadio(e.target.value);
     setCheck(true);
   };
-  console.log(checked);
   return (
     <>
       <div>
