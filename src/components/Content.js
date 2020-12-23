@@ -1,6 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 function Content() {
+  useEffect(() => {
+    async function userData() {
+      axios
+        .get("https://react.smartq.kr/")
+        // 응답(성공)
+        .then(function (response) {
+          console.log(response);
+        })
+        // 응답(실패)
+        .catch(function (error) {
+          console.log(error);
+        })
+        // 응답(항상 실행)
+        .then(function () {
+          // ...
+        });
+    }
+    userData();
+  }, []);
+
   const [check, setCheck] = useState(false);
   const [radio, setRadio] = useState("");
   const [checked, setChecked] = useState(false);
