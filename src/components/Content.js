@@ -5,7 +5,7 @@ function Content() {
   useEffect(() => {
     async function userData() {
       axios
-        .get("https://react.smartq.kr/")
+        .get("http://react.smartq.kr/test.php")
         // 응답(성공)
         .then(function (response) {
           console.log(response);
