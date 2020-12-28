@@ -15,9 +15,7 @@ function Content() {
           console.log(error);
         })
         // 응답(항상 실행)
-        .then(function () {
-          // ...
-        });
+        .then(function () {});
     }
     userData();
   }, []);
